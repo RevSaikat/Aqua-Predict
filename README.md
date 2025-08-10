@@ -29,10 +29,10 @@ better accuracy for rainfall prediction.
 * python app.py
 
 # Screenshots
-* About AquaPredict:<img src = "img/">
+* About AquaPredict:<img src = "img/About AquaPredict.PNG">
 * Dashboard:<img src = "img/dashboard.PNG">
-* Developer:<img src = "img/">
-* Predictor:
+* Developer:<img src = "img/Developers.PNG">
+* Predictor:<img src = "img/Predictor.PNG">
 * Result:
   
 # Workflow
