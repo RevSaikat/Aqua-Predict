@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaPredict</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style1.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='media.css') }}">
+  </head>
+  <body>
+
+    <section>
+      <input type="checkbox" id="check">
+      <header>
+        </div>
+        <h2><a href="#" class="logo">AquaPredict</a></h2>
+        <div class="navigation">
+          <a href="#">Home</a>
+          <a href="#about">About AquaPredict</a>
+          <a href="#dashboard">Dashboard</a>
+          <a href="#info">Developer</a>
+          <a href="/predict">Predictor</a>
+        </div>
+        <label for="check">
+        <i class="fas fa-bars menu-btn"></i>
+        <i class="fas fa-times close-btn"></i>
+        </label>
+      </header>
+      <div class="content" style="margin-top: 8%;">
+        <div class="info">
+          <h2>Plant Trees <br><span>Save Rain</span></h2>
+          <p> "Plant trees to bring the rains and get rid of the summer's heat.” - Trees help reduce and moderate the temperature and climate, which is why it is so important that we have more of them</p>
+          <a href="#about" class="info-btn">More info</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About AquaPredict</h2>
+      <p class="about-content" style="text-align: center;">AquaPredict is an innovative web application powered by a robust Machine Learning model designed to forecast whether it will rain the next day. Utilizing the Rain Prediction in Australia dataset, this app aims to provide accurate and timely rainfall predictions, which are crucial for various stakeholders.
+
+        Rainfall prediction is essential due to its significant impact on various aspects of life. High and unpredictable precipitation can lead to severe consequences, such as crop destruction and property damage. With AquaPredict, we aim to mitigate these risks by providing advanced warnings and enabling better management of agricultural activities. Over 80% of Australia receives less than 600 mm of rainfall annually, making it one of the driest continents, second only to Antarctica. For instance, inland areas near Lake Eyre receive as little as 81 mm of rain per year. The average annual rainfall in the Australian desert ranges from 81 to 250 mm, and thunderstorms are relatively common, with an annual average of 15 to 20 thunderstorms.
+        
+        In southern Australia, winters bring westerly winds and rain-bearing cold fronts due to high-pressure systems moving northward. Cold snaps may cause frost inland, while coastal areas remain mild. Summers are generally dry and hot with coastal sea breezes. Prolonged dry spells and hot winds from the interior can lead to bushfires, particularly in Victoria and New South Wales. On the other hand, northern Australia experiences a monsoon season known as "the wet" from October to April, characterized by humid north-westerly winds bringing showers and thunderstorms. Occasionally, tropical cyclones bring heavy rainfall to coastal and inland regions.
+        
+        AquaPredict's advanced forecasting capabilities provide early rainfall projections, allowing for preventive measures to minimize risks to life and property. The app also aids in better agricultural management by providing precise weather forecasts, enabling farmers to make informed decisions. By leveraging advanced datasets and machine learning, AquaPredict enhances the accuracy of rainfall predictions, ensuring better preparedness and management.
+      </p>
+    </section>
+
+    <section id="dashboard">
+      <h2>Dashboard</h2>
+      <p>This dashboard is done using a software called PowerBI which is a product of Microsoft.
+        Here We have just attached the images of the dashboard because PowerBI needs oraganizational
+        account. So to see the visualizations interactive, We use similar images to replicate the original PowerBI dashboard. The usage of dashboards like
+        these is to bring a better understanding about the dataset and also to bring some beautiful insights</p>
+      <img class="dashboard-image" src="../static/dashboard.png" alt="1">
+      <div>
+        <img src="../static/1.png" alt="1">
+        <img src="../static/3.png" alt="3">
+        <img src="../static/4.png" alt="4">
+        <img src="../static/5.png" alt="5">
+        <img src="../static/6.png" alt="6">
+        <img src="../static/7.png" alt="7">
+        <img src="../static/8.png" alt="8">
+        <img src="../static/9.png" alt="9">
+      </div>
+    </section>
+    
+    <section id="info">
+      <div>
+        <img src="../static/dev.jpg" alt="1">
+      </div>
+      <div>
+        <h2>Developers</h2>
+        <h3 style="color: purple;">This project had been developed by Saikat Das, Chayan Shaw, Sayan Ghosh, Chirasree Chaki, Gargi Das. For futher details contact our Github or Linkedin Profiles.</h3>
+
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        <center><b> Thank You For Your Visit.</b></center>
+      </p> 
+      <div class="person-container">
+        <div class="person">
+            <span class="person-name">Saikat Das</span><br>
+            <div class="links">
+              
+              <a href="https://www.instagram.com/rev.saikat" class="link-icon" target="_blank" aria-label="Saikat's Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+
+                <a href="https://github.com/RevSaikat" class="link-icon" target="_blank" aria-label="Saikat's GitHub">
+                  <i class="fab fa-github"></i>
+              </a>
+
+                <a href="https://www.linkedin.com/in/saikat-das-944a2a24a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="link-icon" target="_blank" aria-label="Saikat's LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+
+       
+      <div class="person">
+        <span class="person-name">Chayan Shaw</span>
+        <div class="links">
+          <a href="https://www.facebook.com/chayan.shaw.9" class="link-icon" target="_blank" aria-label="Chayan Shaw's Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+
+            <a href="https://github.com/learner629" class="link-icon" target="_blank" aria-label="Chayan Shaw's GitHub">
+              <i class="fab fa-github"></i>
+          </a>
+
+            <a href="" class="link-icon" target="_blank" aria-label="Chayan Shaw's LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </div>
+    <div class="person">
+      <span class="person-name">Sayan Ghosh</span>
+      <div class="links">
+        <a href="https://www.facebook.com/share/17eUkH1417" class="link-icon" target="_blank" aria-label="Sayan Ghosh's Facebook">
+          <i class="fab fa-facebook"></i>
+      </a>
+
+          <a href="" class="link-icon" target="_blank" aria-label="Sayan's GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+
+          <a href="https://www.linkedin.com/in/sayan-ghosh-630126333/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="link-icon" target="_blank" aria-label="Sayan's LinkedIn">
+              <i class="fab fa-linkedin"></i>
+          </a>
+      </div>
+  </div>
+
+
+    <div class="person">
+      <span class="person-name">Chirasree Chaki</span>
+      <div class="links">
+        <a href="https://www.facebook.com/share/1CCnRxsyfe" class="link-icon" target="_blank" aria-label="Chirasree Chaki's Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+
+          <a href="" class="link-icon" target="_blank" aria-label="Chirasree Chaki's GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+
+          <a href="https://www.linkedin.com/in/chirasree-chaki-232561327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="link-icon" target="_blank" aria-label="Chirasree Chaki's LinkedIn">
+              <i class="fab fa-linkedin"></i>
+          </a>
+      </div>
+  </div>    
+
+  <div class="person">
+    <span class="person-name">Gargi Das</span>
+    <div class="links">
+      <a href="https://www.facebook.com/profile.php?id=100016799298276&mibextid=ZbWKwL" class="link-icon" target="_blank" aria-label="Gargi Das's Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+
+        <a href="" class="link-icon" target="_blank" aria-label="Gargi Das's GitHub">
+          <i class="fab fa-github"></i>
+      </a>
+
+        <a href="https://www.linkedin.com/in/gargi-das-b56398240?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="link-icon" target="_blank" aria-label="Gargi Das's LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+  </div>
+  </div>
+
+    </div>
+    </footer>
+
+  </body>
+</html>
