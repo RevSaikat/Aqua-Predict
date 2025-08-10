@@ -28,20 +28,13 @@ better accuracy for rainfall prediction.
 * Now for the final step. Run the app
 * python app.py
 
-# Some screenshots of the app
-* Landing Page:
-![Landing Page]()
-* About AquaPredict:
-![About]()
-* Dashboard:
-![Dashboard]()
+# Screenshots
+* About AquaPredict:<img src = "">
+* Dashboard:<img src = "">
 * Developer:
-![Developer]()
 * Predictor:
-![Predictor]()
 * Result:
-![Result]()
-
+  
 # Workflow
 
 # Data Collection: 
