@@ -33,7 +33,7 @@ better accuracy for rainfall prediction.
 * Dashboard:<img src = "img/dashboard.PNG">
 * Developer:<img src = "img/Developers.PNG">
 * Predictor:<img src = "img/Predictor.PNG">
-* [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)]()
+* [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://aqua-predict-2.onrender.com)
   
 # Workflow
 
