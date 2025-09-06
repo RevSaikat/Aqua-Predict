@@ -35,7 +35,7 @@ better accuracy for rainfall prediction.
 * Predictor:<img src = "img/Predictor.PNG">
   
 # Workflow
-* **FOR LIVE PROJECT PREVIEW CLICK HERE**     [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://aqua-predict.onrender.com)
+**FOR LIVE PROJECT PREVIEW CLICK HERE**     [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://aqua-predict.onrender.com)
 
 # Data Collection: 
 Any dataset can be used to train this module
