@@ -1,4 +1,8 @@
 # Rain-Prediction
+
+[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://aqua-predict.onrender.com)
+**Live Application:** [https://aqua-predict.onrender.com](https://aqua-predict.onrender.com)
+
 India is an agricultural country and its economy is largely based upon
 crop productivity and rainfall. For analyzing the crop productivity,
 rainfall prediction is required and necessary to all farmers. Rainfall
