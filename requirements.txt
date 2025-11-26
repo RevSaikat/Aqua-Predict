@@ -30,6 +30,3 @@ cryptography==44.0.0
 # Utilities
 python-dateutil==2.9.0
 pytz==2024.2
-
-# ML Models (add for production deployment)
-catboost==1.2.7

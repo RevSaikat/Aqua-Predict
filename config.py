@@ -8,7 +8,7 @@ load_dotenv()
 class Config:
     """Base configuration"""
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'dev-secret-key-change-in-production'
-    MODEL_PATH = os.environ.get('MODEL_PATH') or './models/cat.pkl'
+    MODEL_PATH = os.environ.get('MODEL_PATH') or './models/logreg.pkl'  # Using logistic regression (no extra deps)
     
     # Flask-WTF CSRF Protection
     WTF_CSRF_ENABLED = True
