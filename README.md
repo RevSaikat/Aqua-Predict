@@ -18,22 +18,82 @@ better accuracy for rainfall prediction.
 * Back-End: Flask
 * IDE: Jupyter notebook, Pycharm
 
-# How to run
-* First go to the project folder and open the terminal then type the below code
-* conda create -n myenv python=3.6
-* Activate the environment using the command:
-* conda activate myenv
-* Then install all the packages by using the following command
-* pip install -r requirements.txt
-* Now for the final step. Run the app
-* python app.py
+# How to Run
+
+See the detailed setup instructions below. For API integration, refer to [API_DOCUMENTATION.md](API_DOCUMENTATION.md).
+
+
+## Prerequisites
+- **Python 3.10 or higher** (recommended: Python 3.10, 3.11, or 3.12)
+- pip (Python package manager)
+
+## Setup Instructions
+
+### 1. Clone the Repository
+```bash
+git clone <repository-url>
+cd Project
+```
+
+### 2. Create Virtual Environment
+```bash
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+```
+
+### 3. Install Dependencies
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+### 4. Configure Environment Variables
+```bash
+# Copy the example environment file
+copy .env.example .env    # Windows
+# cp .env.example .env    # macOS/Linux
+
+# Edit .env and set your SECRET_KEY
+# Use a secure random key for production!
+```
+
+### 5. Run the Application
+```bash
+python app.py
+```
+
+The application will be available at `http://localhost:5000`
+
+## Troubleshooting
+
+### Model Loading Issues
+If you encounter model loading errors, you may need to retrain the models with the updated libraries:
+1. Navigate to `testing_notebooks/`
+2. Run the training notebooks to regenerate model files
+3. Ensure the `.pkl` files are saved in the `models/` directory
+
+### Dependency Conflicts
+If you face package conflicts:
+```bash
+pip install --upgrade --force-reinstall -r requirements.txt
+```
 
 # Screenshots
-* About AquaPredict:<img src = "img/">
-* Dashboard:<img src = "img/dashboard.PNG">
-* Developer:<img src = "img/">
-* Predictor:
-* Result:
+
+## Dashboard
+![Dashboard](img/dashboard.PNG)
+
+## Static Assets
+The project includes various visualization screenshots located in the `static/` directory:
+- Dashboard visualizations (1.png through 9.png)
+- Developer photo (dev.jpg)
+- Weather result images (rainy.jpg, sunny.jpg, sunny.png)
   
 # Workflow
 

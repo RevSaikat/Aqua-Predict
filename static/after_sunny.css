@@ -1,10 +1,10 @@
-/* Styling for result pages (rainy) */
+/* Styling for result pages (sunny and rainy) */
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -54,7 +54,7 @@ body {
 .highlight {
     font-style: italic;
     font-weight: 700;
-    color: #87ceeb;
+    color: #ffd700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -63,11 +63,11 @@ body {
     .result-title {
         font-size: 2rem;
     }
-
+    
     .result-image img {
         max-width: 400px;
     }
-
+    
     .result-message h2 {
         font-size: 1.2rem;
     }
@@ -77,11 +77,11 @@ body {
     .result-title {
         font-size: 1.5rem;
     }
-
+    
     .result-image img {
         max-width: 300px;
     }
-
+    
     .result-message h2 {
         font-size: 1rem;
     }
