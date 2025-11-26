@@ -31,8 +31,5 @@ cryptography==44.0.0
 python-dateutil==2.9.0
 pytz==2024.2
 
-# NOTE: CatBoost and XGBoost require compilation on Python 3.13
-# The existing .pkl model files will still work!
-# Only install these if you need to retrain models:
-# catboost==1.2.7  (requires Rust compiler)
-# xgboost==2.1.2   (requires C++ compiler)
+# ML Models (add for production deployment)
+catboost==1.2.7
