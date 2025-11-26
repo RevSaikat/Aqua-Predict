@@ -4,7 +4,7 @@ from flask_wtf.csrf import CSRFProtect
 import pandas as pd
 import numpy as np
 import datetime
-import pickle
+import joblib  # Changed from pickle to joblib for model loading
 import os
 import logging
 from config import config
@@ -30,7 +30,7 @@ try:
     if not os.path.exists(model_path):
         raise FileNotFoundError(f"Model file not found: {model_path}")
     
-    model = pickle.load(open(model_path, "rb"))
+    model = joblib.load(model_path)  # Changed from pickle.load
     logger.info(f"Model loaded successfully from {model_path}")
 except Exception as e:
     logger.error(f"Failed to load model: {str(e)}")
@@ -127,7 +127,7 @@ def predict():
         if model is None:
             try:
                 model_path = app.config['MODEL_PATH']
-                model = pickle.load(open(model_path, "rb"))
+                model = joblib.load(model_path)  # Changed from pickle.load
                 logger.info(f"Model reloaded successfully from {model_path}")
             except Exception as e2:
                 logger.error(f"Failed to reload model: {str(e2)}")
