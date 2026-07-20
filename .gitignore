@@ -54,6 +54,9 @@ wheels/
 .pytest_cache/
 htmlcov/
 
+# pyrefly
+pyrefly.toml
+
 # Flask
 instance/
 .webassets-cache
@@ -65,3 +68,6 @@ logs/
 # OS
 .DS_Store
 Thumbs.db
+
+#AI
+memory.md

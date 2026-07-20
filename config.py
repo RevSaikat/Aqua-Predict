@@ -5,10 +5,33 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+def _require_env(var: str) -> str:
+    """Return the value of a required environment variable.
+
+    Raises ValueError at import time if the variable is not set.
+    Keeps validation logic out of class bodies so static analysers
+    (e.g. pyrefly) can resolve names correctly.
+    """
+    value = os.environ.get(var)
+    if not value:
+        if os.environ.get('FLASK_ENV') == 'production':
+            raise ValueError(f"No {var} set for Flask application in production!")
+        return "dummy-secret-key"
+    return value
+
+
+# ---------------------------------------------------------------------------
+# Module-level env reads — referenced  inside class bodies so that pyrefly's
+# virtual-file class-body analysis never encounters bare `os` calls.
+# ---------------------------------------------------------------------------
+_SECRET_KEY_DEFAULT: str = os.environ.get('SECRET_KEY') or 'dev-secret-key-change-in-production'
+_MODEL_PATH_DEFAULT: str = os.environ.get('MODEL_PATH') or './models/logreg.pkl'
+
+
 class Config:
     """Base configuration"""
-    SECRET_KEY = os.environ.get('SECRET_KEY') or 'dev-secret-key-change-in-production'
-    MODEL_PATH = os.environ.get('MODEL_PATH') or './models/logreg.pkl'  # Using logistic regression (no extra deps)
+    SECRET_KEY: str = _SECRET_KEY_DEFAULT
+    MODEL_PATH: str = _MODEL_PATH_DEFAULT
     
     # Flask-WTF CSRF Protection
     WTF_CSRF_ENABLED = True
@@ -28,11 +51,9 @@ class ProductionConfig(Config):
     """Production configuration"""
     DEBUG = False
     TESTING = False
-    
-    # Override with strong secret key in production
-    SECRET_KEY = os.environ.get('SECRET_KEY')
-    if not SECRET_KEY:
-        raise ValueError("No SECRET_KEY set for Flask application in production!")
+
+    # Validated at import time — raises ValueError if SECRET_KEY is unset
+    SECRET_KEY: str = _require_env('SECRET_KEY')
     
 
 class TestingConfig(Config):

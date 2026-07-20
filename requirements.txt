@@ -30,3 +30,10 @@ cryptography==44.0.0
 # Utilities
 python-dateutil==2.9.0
 pytz==2024.2
+
+# Testing / Integration Test
+requests==2.34.2
+beautifulsoup4==4.15.0
+
+# Type Stubs (for static analysis with pyrefly/mypy)
+types-Flask-Cors==6.0.3.20260712

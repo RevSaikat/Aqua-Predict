@@ -136,6 +136,7 @@ def predict():
         # Validate input
         is_valid, errors = validate_input(request.form)
         if not is_valid:
+            assert errors is not None  # validate_input guarantees list[str] when is_valid=False
             error_message = "Please fix the following errors:<br>" + "<br>".join(errors)
             return render_template("error.html", message=error_message), 400
 
